@@ -1,11 +1,14 @@
 # iS3 Tunnel (Enhanced_RAG) - 智能检索增强生成系统
 
+![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=flat&logo=github)
 ![RAG Architecture](https://img.shields.io/badge/RAG-Architecture-blue)
 ![Python](https://img.shields.io/badge/Python-3.8+-green)
 ![LangChain](https://img.shields.io/badge/LangChain-0.3.26-orange)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-1.0.15-purple)
 
 一个功能强大的检索增强生成（RAG）系统，专为iS3隧道项目设计，支持智能文档处理、向量化存储和精准问答。
+
+**📦 项目仓库**: [https://github.com/shengliuyang/iS3-Tunnel](https://github.com/shengliuyang/iS3-Tunnel)
 
 ## 🚀 项目特色
 
@@ -32,7 +35,7 @@
 ## 📁 项目结构
 
 ```
-iS3_tunnel_enhanced_rag/
+iS3-Tunnel/
 ├── README.md                    # 英文项目说明文档（主要）
 ├── README_CN.md                 # 中文项目说明文档
 ├── requirements.txt             # 依赖包列表
@@ -92,8 +95,8 @@ iS3_tunnel_enhanced_rag/
 
 1. **克隆项目**
 ```bash
-git clone <repository-url>
-cd iS3_tunnel_enhanced_rag
+git clone https://github.com/shengliuyang/iS3-Tunnel.git
+cd iS3-Tunnel
 ```
 
 2. **安装依赖**
@@ -194,7 +197,7 @@ BATCH_SIZE=10
 │ • PDF文件       │    │ • 元数据提取     │    │ • 向量索引       │
 │ • Markdown文件  │    │ • 关键词提取     │    │ • 持久化存储     │
 └─────────────────┘    │ • 摘要生成       │    └─────────────────┘
-                       └─────────────────┘              │
+                       └─────────────────┘
                                                         │
 ┌─────────────────┐    ┌─────────────────┐              │
 │   用户查询       │    │   检索增强       │              │

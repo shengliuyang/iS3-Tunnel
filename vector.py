@@ -38,7 +38,7 @@ def update_llm_progress_bar():
             llm_pbar = None
 
 # 向量数据库保存路径
-CHROMA_DB_DIR = os.path.join(os.path.dirname(__file__), 'chroma_db_yuanwen_shigong')
+CHROMA_DB_DIR = os.path.join(os.path.dirname(__file__), 'chroma_db')
 
 # 使用 Ollama 本地中文 embedding 模型
 EMBEDDING_MODEL = OllamaEmbeddings(
@@ -432,7 +432,7 @@ def build_chroma_db(docs, persist_dir=CHROMA_DB_DIR, batch_size=10):
     
     # 初始化 Chroma vectorstore
     vectorstore = Chroma(
-        collection_name="rag_db_yuanwen_shigong",
+        collection_name="rag_db",
         persist_directory=persist_dir,
         embedding_function=EMBEDDING_MODEL
     )

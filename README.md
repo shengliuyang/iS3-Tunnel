@@ -1,11 +1,14 @@
 # iS3 Tunnel (Enhanced_RAG) - Intelligent Retrieval-Augmented Generation System
 
+![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=flat&logo=github)
 ![RAG Architecture](https://img.shields.io/badge/RAG-Architecture-blue)
 ![Python](https://img.shields.io/badge/Python-3.8+-green)
 ![LangChain](https://img.shields.io/badge/LangChain-0.3.26-orange)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-1.0.15-purple)
 
 A powerful Retrieval-Augmented Generation (RAG) system specifically designed for the iS3 tunnel project, supporting intelligent document processing, vectorized storage, and precise question answering.
+
+**📦 Repository**: [https://github.com/shengliuyang/iS3-Tunnel](https://github.com/shengliuyang/iS3-Tunnel)
 
 ## 🚀 Project Features
 
@@ -32,7 +35,7 @@ A powerful Retrieval-Augmented Generation (RAG) system specifically designed for
 ## 📁 Project Structure
 
 ```
-iS3_tunnel_enhanced_rag/
+iS3-Tunnel/
 ├── README.md                    # English documentation (main)
 ├── README_CN.md                 # Chinese documentation
 ├── requirements.txt             # Dependencies list
@@ -92,8 +95,8 @@ iS3_tunnel_enhanced_rag/
 
 1. **Clone the project**
 ```bash
-git clone <repository-url>
-cd iS3_tunnel_enhanced_rag
+git clone https://github.com/shengliuyang/iS3-Tunnel.git
+cd iS3-Tunnel
 ```
 
 2. **Install dependencies**
@@ -225,16 +228,16 @@ BATCH_SIZE=10
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Document Input │    │  Document Processing │    │ Vectorized Storage │
+│   Document Input │    │ Document Processing │    │ Vectorized Storage │
 │                 │    │                 │    │                 │
 │ • TXT files     │───▶│ • Text splitting │───▶│ • ChromaDB      │
 │ • PDF files     │    │ • Metadata extraction │    │ • Vector indexing │
 │ • Markdown files│    │ • Keyword extraction │    │ • Persistent storage │
 └─────────────────┘    │ • Summary generation │    └─────────────────┘
-                       └─────────────────┘              │
+                       └─────────────────┘
                                                         │
 ┌─────────────────┐    ┌─────────────────┐              │
-│   User Query     │    │  Enhanced Retrieval │              │
+│   User Query     │    │ Enhanced Retrieval │              │
 │                 │    │                 │              │
 │ • Natural language │───▶│ • Semantic retrieval │◀─────────────┘
 │ • Keyword queries │    │ • Keyword matching │
