@@ -231,26 +231,34 @@ BATCH_SIZE=10
 │   Document Input │    │ Document Processing │    │ Vectorized Storage │
 │                 │    │                 │    │                 │
 │ • TXT files     │───▶│ • Text splitting │───▶│ • ChromaDB      │
-│ • PDF files     │    │ • Metadata extraction │    │ • Vector indexing │
-│ • Markdown files│    │ • Keyword extraction │    │ • Persistent storage │
-└─────────────────┘    │ • Summary generation │    └─────────────────┘
+│ • PDF files     │    │ • Metadata      │    │ • Vector indexing │
+│ • Markdown files│    │   extraction     │    │ • Persistent     │
+└─────────────────┘    │ • Keyword       │    │   storage        │
+                       │   extraction     │    └─────────────────┘
+                       │ • Summary       │
+                       │   generation     │
                        └─────────────────┘
                                                         │
 ┌─────────────────┐    ┌─────────────────┐              │
 │   User Query     │    │ Enhanced Retrieval │              │
 │                 │    │                 │              │
-│ • Natural language │───▶│ • Semantic retrieval │◀─────────────┘
-│ • Keyword queries │    │ • Keyword matching │
-│ • Structured queries │    │ • Result re-ranking │
+│ • Natural       │───▶│ • Semantic      │◀─────────────┘
+│   language      │    │   retrieval     │
+│ • Keyword       │    │ • Keyword       │
+│   queries       │    │   matching      │
+│ • Structured    │    │ • Result        │
+│   queries       │    │   re-ranking    │
 └─────────────────┘    └─────────────────┘
                                 │
                                 ▼
                        ┌─────────────────┐
                        │  Q&A Generation │
                        │                 │
-                       │ • Context building │
+                       │ • Context       │
+                       │   building      │
                        │ • LLM calls     │
-                       │ • Answer generation │
+                       │ • Answer        │
+                       │   generation    │
                        └─────────────────┘
 ```
 
