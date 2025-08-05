@@ -1,0 +1,23 @@
+# Azure OpenAI 配置
+AZURE_OPENAI_KEY=your_azure_openai_key_here
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
+AZURE_OPENAI_DEPLOYMENT=gpt-4o
+AZURE_OPENAI_API_VERSION=2024-08-01-preview
+
+# Ollama 配置
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_EMBEDDING_MODEL=dengcao/Qwen3-Embedding-8B:Q8_0
+
+# 向量数据库配置
+CHROMA_DB_DIR=./data/vector_db
+COLLECTION_NAME=rag_db
+
+# 日志配置
+LOG_LEVEL=INFO
+LOG_FILE=./logs/rag_system.log
+
+# 处理配置
+MIN_CHUNK_SIZE=200
+MAX_CHUNK_SIZE=1500
+CHUNK_OVERLAP=300
+BATCH_SIZE=10 
