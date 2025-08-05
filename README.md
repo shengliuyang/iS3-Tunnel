@@ -228,7 +228,7 @@ BATCH_SIZE=10
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Document Input │    │ Document Processing │    │ Vectorized Storage │
+│  Document Input │    │Document Processing│  │Vectorized Storage│
 │                 │    │                 │    │                 │
 │ • TXT files     │───▶│ • Text splitting │───▶│ • ChromaDB      │
 │ • PDF files     │    │ • Metadata      │    │ • Vector indexing │
@@ -240,7 +240,7 @@ BATCH_SIZE=10
                        └─────────────────┘
                                                         │
 ┌─────────────────┐    ┌─────────────────┐              │
-│   User Query     │    │ Enhanced Retrieval │              │
+│   User Query    │    │Enhanced Retrieval│              │
 │                 │    │                 │              │
 │ • Natural       │───▶│ • Semantic      │◀─────────────┘
 │   language      │    │   retrieval     │
