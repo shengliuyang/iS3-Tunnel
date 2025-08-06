@@ -226,41 +226,26 @@ BATCH_SIZE=10
 
 ## 📊 iS3 Tunnel Enhanced RAG System Architecture
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Document Input │    │Document Processing│  │Vectorized Storage│
-│                 │    │                 │    │                 │
-│ • TXT files     │───▶│ • Text splitting │───▶│ • ChromaDB      │
-│ • PDF files     │    │ • Metadata      │    │ • Vector indexing │
-│ • Markdown files│    │   extraction     │    │ • Persistent     │
-└─────────────────┘    │ • Keyword       │    │   storage        │
-                       │   extraction     │    └─────────────────┘
-                       │ • Summary       │
-                       │   generation     │
-                       └─────────────────┘
-                                                        │
-┌─────────────────┐    ┌─────────────────┐              │
-│   User Query    │    │Enhanced Retrieval│              │
-│                 │    │                 │              │
-│ • Natural       │───▶│ • Semantic      │◀─────────────┘
-│   language      │    │   retrieval     │
-│ • Keyword       │    │ • Keyword       │
-│   queries       │    │   matching      │
-│ • Structured    │    │ • Result        │
-│   queries       │    │   re-ranking    │
-└─────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │  Q&A Generation │
-                       │                 │
-                       │ • Context       │
-                       │   building      │
-                       │ • LLM calls     │
-                       │ • Answer        │
-                       │   generation    │
-                       └─────────────────┘
-```
+![iS3 Tunnel RAG Workflow](RAG流程.tif)
+
+**Figure: iS3 Tunnel RAG Workflow**
+- Multi-format document ingestion and semantic chunking
+- Vectorization and storage in ChromaDB
+- Hybrid retrieval combining semantic and keyword search
+- LLM-based answer generation with context enhancement
+
+## 🤖 iS3 Tunnel Intelligent Agent Architecture
+
+![iS3 Tunnel Agent Workflow](智能体.tif)
+
+**Figure: iS3 Tunnel Intelligent Agent Workflow**
+- The intelligent agent orchestrates multi-step reasoning and tool use
+- Integrates RAG retrieval, LLM planning, and external tool invocation
+- Supports complex, multi-turn, and tool-augmented queries
+- Enables advanced tunnel engineering Q&A and decision support
+
+**About the Agent:**
+The iS3 Tunnel Intelligent Agent is an advanced extension built on top of the RAG system. It leverages the RAG knowledge base, LLM reasoning, and external tools to solve complex, multi-step engineering problems. The agent can plan, retrieve, and synthesize information, making it suitable for expert-level tunnel engineering Q&A, workflow automation, and intelligent decision support.
 
 ## 🎯 iS3 Tunnel Enhanced RAG Core Features
 
@@ -340,4 +325,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Tongji University  
 Email: 2252056@tongji.edu.cn
 
+**Co-author:**  
+Huaiyuan Sun  
+Tongji University  
+Email: 2310413@tongji.edu.cn
+
 *This project is developed as part of the iS3 tunnel project research at Tongji University.* 
+
+**共同作者**:
+- 张三 (Tongji University)
+- 李四 (Tongji University) 
