@@ -326,7 +326,7 @@ Tongji University
 Email: 2252056@tongji.edu.cn
 
 **Co-author:**  
-Huaiyuan Sun  
+**Huaiyuan Sun**  
 Tongji University  
 Email: 2310413@tongji.edu.cn
 
