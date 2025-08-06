@@ -189,7 +189,7 @@ BATCH_SIZE=10
 
 ## 📊 iS3 Tunnel Enhanced RAG系统架构图
 
-![iS3 Tunnel RAG流程](RAG流程.tif)
+![iS3 Tunnel RAG流程](RAG流程.png)
 
 **图：iS3 Tunnel RAG整体流程**
 - 多格式文档接入与语义分块
@@ -199,7 +199,7 @@ BATCH_SIZE=10
 
 ## 🤖 iS3 Tunnel 智能体架构
 
-![iS3 Tunnel 智能体流程](智能体.tif)
+![iS3 Tunnel 智能体流程](智能体.png)
 
 **图：iS3 Tunnel智能体工作流**
 - 智能体自动编排多步推理与工具调用
@@ -295,6 +295,3 @@ Huaiyuan Sun
 
 *本项目是同济大学iS3隧道项目研究的一部分。* 
 
-**共同作者**:
-- **张三** (同济大学)
-- **李四** (同济大学) 

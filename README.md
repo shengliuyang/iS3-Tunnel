@@ -226,7 +226,7 @@ BATCH_SIZE=10
 
 ## 📊 iS3 Tunnel Enhanced RAG System Architecture
 
-![iS3 Tunnel RAG Workflow](RAG流程.tif)
+![iS3 Tunnel RAG Workflow](RAG流程.png)
 
 **Figure: iS3 Tunnel RAG Workflow**
 - Multi-format document ingestion and semantic chunking
@@ -236,7 +236,7 @@ BATCH_SIZE=10
 
 ## 🤖 iS3 Tunnel Intelligent Agent Architecture
 
-![iS3 Tunnel Agent Workflow](智能体.tif)
+![iS3 Tunnel Agent Workflow](智能体.png)
 
 **Figure: iS3 Tunnel Intelligent Agent Workflow**
 - The intelligent agent orchestrates multi-step reasoning and tool use
@@ -332,6 +332,3 @@ Email: 2310413@tongji.edu.cn
 
 *This project is developed as part of the iS3 tunnel project research at Tongji University.* 
 
-**共同作者**:
-- 张三 (Tongji University)
-- 李四 (Tongji University) 
